@@ -1,13 +1,13 @@
 {% set name = "dagster_dbt" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.7.post0" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 39e38a0096990aae81eef1992f8327b8825db0f2f173f765d8e531784e912cd9
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name|replace('_', '-') }}/{{ name|replace('_', '-') }}-{{ version }}.tar.gz"
+  sha256: 57ef6e885770afd89666a4e597040c4ca4fbb029b9a7f2f5ef73eef50dde3c7f
 
 build:
   number: 0
